@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gradient Color Generator in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="generate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="generate.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-nav">
+                <a href="index.html"><img src="assets/img/logos/png/cololpal_logo.png" alt="logo-nav"></a> 
+            </div>
+
+            <ul class="list-nav">
+                <ul><a href="flatUI.htm">Flat-UI</a></ul>
+                <ul><a href="hot-gradient.html">Gradient</a></ul>
+                <select  class="select-box">
+                    <option a href="mono-chromatic.html"> Color-Collection </a></option>
+                    <option value="to popular"> Popular </option>
+                    <option value="to month"> Month </option>
+                    <option value="to year"> Year </option>
+                </select>
+                <div class="get-started"><a href="#">Get-Started</a></div>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="gradient-box"></div>
+    <div class="wrapper hidden">
+
+        <div class="row options">
+            <div class="column direction">
+                <p>Direction</p>
+                <div class="select-box">
+                    <select>
+                        <option value="to top">Top</option>
+                        <option value="to right top">Right top</option>
+                        <option value="to right">Right</option>
+                        <option value="to right bottom">Right bottom</option>
+                        <option value="to bottom">Bottom</option>
+                        <option value="to left bottom">Left bottom</option>
+                        <option value="to left">Left</option>
+                        <option value="to left top" selected>Left top</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column palette">
+                <p>Colors</p>
+                <div class="colors">
+                    <input type="color" value="#5665E9">
+                    <input type="color" value="#A271F8">
+                </div>
+            </div>
+        </div>
+        <textarea class="row" disabled>background-image: linear-gradient(to left top, #977DFE,  #6878FF);</textarea>
+        <div class="row buttons">
+            <button class="refresh">Refresh Colors</button>
+            <button class="copy">Copy Code</button>
+        </div>
+    </div>
+    <section class="thanks-for-choosing-us hidden">
+        <div class="div-text hidden">
+            <h1 class="h1-thanks-for-choosing-us hidden">Thanks for choosing us</h1>
+            <p class="p-thanks-for-choosing-us hidden">
+                If you find it useful,help us make it more funny<br>
+                We´ve a team collaborating/building
+            </p>
+            <div class="explore-more-colors__buttom hidden">
+                <a class="buttom__normal buttom" href="https://github.com/SimonAbilio/colpal.git">Collaborate Coding</a>
+            </div>
+        </div>
+        <div class="div-img"><img src="assets/img/flatUI.png" alt="dont stop img"></div>
+    </section> 
+    <footer> <div class="footer"><img src="assets/img/logo_logo.png" alt="" class="footer"></div></footer>   
+
+    <script>
+        const myObserver = new IntersectionObserver( (entries) => {
+                    entries.forEach( (entry) => {
+                        if(entry.isIntersecting){
+                            entry.target.classList.add(`show`)
+                            entry.target.classList.add(`show2`)
+                            entry.target.classList.add(`show3`)
+                            entry.target.classList.add(`show4`)
+                        } else {
+                            entry.target.classList.remove(`show`)
+                            entry.target.classList.remove(`show2`)
+                            entry.target.classList.remove(`show3`)
+                            entry.target.classList.remove(`show4`)
+                        }
+                    })
+                } )
+
+        const elements = document.querySelectorAll(`.hidden`)
+        const elements2 = document.querySelectorAll(`.card`)
+        const elements3 = document.querySelectorAll(`.hidden3`)
+        const elements4 = document.querySelectorAll(`.hidden4`)
+
+        elements4.forEach((element)=> myObserver.observe (element));
+        elements3.forEach((element)=> myObserver.observe (element));
+        elements2.forEach((element)=> myObserver.observe (element));
+        elements.forEach( (element) => myObserver.observe(element));
+    </script>
+</body>
+
+</html>

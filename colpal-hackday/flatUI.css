@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*NAV-SECTION */
+
+nav {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(247, 243, 243, 0.63);
+    width: 100%;
+}
+
+.logo-nav > a > img {
+    margin-right: 300px;
+    width: 200px;
+}
+
+.list-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.list-nav > ul > a {
+    text-decoration: none;
+    color:#495160;
+}
+
+.get-started {
+    color:#506BF0;
+    margin-left:200px;
+    background-color:#E6EAFC;
+    padding: 15px;
+    width: 150px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.get-started > a {
+text-decoration: none;
+}
+
+/**/
+.back {
+    width: 40px;
+    position: fixed;
+    transform: translateY(-32rem) translateX(-9rem);
+}
+
+.back-img {
+     margin: 60px 0px 0px 2px;
+}
+ 
+/**/
+.flat-ui {
+    display: flex;
+}
+
+.thanks-for-choosing-us {
+    display: flex;
+}
+
+.span-have-no {
+    color: #1a6dda;
+}
+.span-fear {
+    background: linear-gradient(to right,#1a6dda ,#ff3300 );
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.title {
+    color:#1F254E ;
+    font-size:40px ;
+    line-height:50px ;
+    margin-bottom: 5px;
+}
+
+.paragraph-tilte {
+    padding-top: 14rem;
+    padding-left:5rem ;
+}
+
+.explore-more-colors__buttom {
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 12px;
+    background-color:#E6EAFC ;
+    width: 200px;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.buttom__normal {
+    text-decoration: none;
+}
+
+.buttom__normal:hover{
+    color: orange;
+}
+
+.wrapper {
+    width:357px ;
+    height:480px;
+    margin-top: 7rem;
+}
+
+
+.thanks-for-choosing-us {
+    max-width: 1080px;
+    margin: auto;
+    color: #1F254E;
+    gap: 20rem;
+}
+
+/* FOOTER*/
+
+footer {
+    background-color: rgb(245, 235, 235);
+    padding: 5px;
+    display: flex;
+    position: relative;
+    bottom: 0;
+}
+
+.footer {
+    display: flex;
+    margin: auto;
+    width: 150px;
+}
+
+/*IMG animation*/
+
+.div-img {
+animation: div-img 2s infinite alternate-reverse;
+}
+ 
+@keyframes div-img {
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+}
