@@ -85,6 +85,7 @@ text-decoration: none;
 .options{
     margin-left: 60px;
 }
+
 /*texto do hero*/
 main {
 background-image: url(assets/img/vector-backgroundggg.gif);
@@ -671,22 +672,39 @@ footer {
 
 /*MEDIA QUERIE*/
 /*SMART FONE*/
+
 @media (max-width:450px){
+    body{
+    }
     main {
-        height: 600px;
+      width: 450px;
+      height: 500px;
     }
     #text-hero {
-        max-width: 150px;
+        width: 150px;
         margin: auto;
     }
-
     .title {
-        max-width: 5px;
-        min-height: 5px;
+        text-align: center;
+        font-size: 1.5rem;
+        padding-top: 2rem;
+    }
+    #hot-gradients {
+        width:380px;
+        height: 500px;
+        margin: 20px;
+    }
+    .cards {
+        width: 380px;
+        overflow-x:scroll;
+    
     }
 }
 
 /* TABLETS */
-@media (min-width:768px) and (max-width:1024px){
-
+@media (max-width:768px){
+    .title {
+        font-size: 2rem;
+        padding-top: 3rem;
+      }
 }
